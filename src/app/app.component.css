@@ -1,0 +1,112 @@
+
+/* Center the entire contact-info div */
+/* Center the entire contact-info div */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   height: 94vh; /*Full viewport height */
+  padding: 20px;
+}
+body{
+  font-family: sans-serif;
+}
+
+/* Container for both contact details and image */
+.details-container {
+  display: flex;
+  align-items: flex-start; /* Align image and text at the top */
+  /* border: 2px solid #D1006F; Magenta Rose border around entire container */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background color */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); Soft shadow */
+  padding: 20px;
+  width: 100%; /* Ensure it spans the full available width */
+}
+
+/* Flexbox container for left side (text) */
+/* .details-left {
+  margin-right: 20px;
+  padding-right: 20px; /* Ensure there's a space between text and image
+  width: 50%;  Left side takes up 50% width
+} */
+
+/* Styling for the name and title */
+.name-title h1 {
+  font-size: 3rem;
+  margin-bottom: 5px; /* Adjust space between name and profession */
+}
+
+.name-title p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0; /* Remove any default margin between the profession and role */
+}
+
+/* Magenta Rose horizontal line */
+.pink-line {
+  border-top: 2px solid #D1006F; /* Magenta Rose color for the line */
+  margin-top: 10px;
+  width: 50%; /* Adjust the width of the magenta rose line */
+  margin-left: 0; /* Align the line to the left of the container */
+  margin-bottom: 15px; /* Add space below the line */
+}
+
+/* Style for icons with circular Magenta Rose background */
+.phone-icon, .email-icon, .location-icon {
+  color: white; /* White icon color inside the circle */
+  font-size: 1.5rem;
+  margin-right: 10px;
+  background-color: #D1006F; /* Magenta Rose background */
+  border-radius: 50%; /* Circular shape */
+  padding: 12px; /* Adjust padding to create space around the icon */
+  display: inline-block;
+  text-align: center;
+}
+
+/* Styling for the contact details section */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Links styling */
+.detail-link {
+  display: flex;
+  align-items: center;
+  color: inherit; /* Keep text color as the parent color */
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.detail-link:hover {
+  color: #D1006F; /* Magenta Rose color when hovering */
+}
+
+/* Styling for the profile image */
+.details-right {
+  width: 50%; /* Right side takes up 50% width */
+  height: 100%; /* Ensure full height of the container */
+   /* Hide any overflow from the image */
+   /* Make it a positioned container for the image */
+   /* background-image: url('/assets/image/image1.jpg'); */
+  background-size: cover; /* Ensures the image covers the div */
+  background-position: center;
+
+}
+
+.details-right img {
+  width: 100%; /* Ensure the image stretches to fill the container */
+  height: 100%; /* Stretch the height of the image */
+  object-fit: cover; /* Make the image cover the area without distortion */
+  object-position: center; /* Keep the image centered in the container */
+  display: block; /* Ensures the image is visible */
+}
+
